@@ -1,4 +1,4 @@
-apply plugin: 'com.github.dcendents.android-maven-gradle'
+apply plugin: 'com.github.dcendents.android-maven-gradle-plugin'
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
 
