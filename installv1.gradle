@@ -1,4 +1,4 @@
-apply plugin: 'ccom.simpligility.android'
+apply plugin: 'com.simpligility.org.apache.maven.shared'
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
 
