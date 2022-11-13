@@ -1,6 +1,6 @@
 apply plugin: 'com.github.simpligility.android-maven-plugin'
 
-group = publishedGroupId                               // Maven Group ID for the artifact
+group = com.simpligility.maven.plugins                               // Maven Group ID for the artifact
 
 install {
     repositories.mavenInstaller {
