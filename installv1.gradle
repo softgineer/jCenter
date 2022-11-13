@@ -1,4 +1,4 @@
-apply plugin: 'com.simpligility.maven.plugins:android-maven-plugin'
+apply plugin: 'ccom.simpligility.android'
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
 
