@@ -1,3 +1,11 @@
+repositories {
+    mavenCentral()
+
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
 apply plugin: 'com.simpligility.maven.plugins'
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
