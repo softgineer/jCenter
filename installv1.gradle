@@ -5,6 +5,7 @@ plugins {
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
 
+
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
