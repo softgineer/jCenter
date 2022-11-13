@@ -2,8 +2,6 @@ apply plugin: 'com.simpligility.maven.plugins.android'
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
 
-
-
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -39,6 +37,7 @@ install {
                     developerConnection gitUrl
                     url siteUrl
                 }
+                
             }
         }
     }
