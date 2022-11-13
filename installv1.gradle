@@ -1,6 +1,7 @@
 repositories {
     mavenCentral()
-
+    
+    
     maven {
         url "https://jitpack.io"
     }
@@ -31,6 +32,7 @@ install {
                         url licenseUrl
                     }
                 }
+                
                 developers {
                     developer {
                         id developerId
@@ -38,6 +40,7 @@ install {
                         email developerEmail
                     }
                 }
+                
                 scm {
                     connection gitUrl
                     developerConnection gitUrl
