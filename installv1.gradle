@@ -1,47 +1,34 @@
 apply plugin: 'maven-publish'
 
-group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
+afterEvaluate {
+    publishing {
+        publications {
+            productionRelease(MavenPublication) {
+                from components.productionRelease
 
-
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging 'aar'
-                groupId publishedGroupId
-                artifactId artifact
-
-                // Add your description here
-                name libraryName
-                description libraryDescription
-                url siteUrl
-
-                // Set your license
-                licenses {
-                    license {
-                        name licenseName
-                        url licenseUrl
-                    }
+                groupId = 'com.github.my'
+                artifactId = 'nice-project'
+                version = Config.libraryVersion
+                artifact(sourcesJar)
+                artifact("$buildDir/outputs/aar/nice-project-production-release.aar") {
+                    classifier 'production'
+                    extension 'aar'
                 }
-                
-                developers {
-                    developer {
-                        id developerId
-                        name developerName
-                        email developerEmail
-                    }
+            }
+
+            devDebug(MavenPublication){
+                from components.devDebug
+
+                groupId = 'com.github.my'
+                artifactId = 'nice-project'
+                version = Config.libraryVersion
+                artifact(sourcesJar)
+                artifact("$buildDir/outputs/aar/nice=project-dev-release.aar") {
+                    classifier 'dev'
+                    extension 'aar'
                 }
-                
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
-                
             }
         }
     }
 }
-
 
