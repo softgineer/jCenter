@@ -1,4 +1,4 @@
-// apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.github.simpligility.android-maven-plugin'
 
 group = publishedGroupId                               // Maven Group ID for the artifact
 
