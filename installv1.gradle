@@ -1,4 +1,4 @@
-apply plugin: 'maven-publish'
+apply plugin: 'org.apache.maven.plugins'
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
 
