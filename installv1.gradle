@@ -1,10 +1,14 @@
+dependencies {
+    implementation 'com.simpligility.maven.plugins:android-maven-plugin:4.6.0'
+}
+
 repositories {
     google()
     mavenCentral()
     maven { url "https://plugins.gradle.org/m2/" }
 }
 
-apply plugin: 'com.simpligility.maven.plugins'
+apply plugin: 'android-maven-plugin'
 
 group = 'com.simpligility.maven.plugins'                               // Maven Group ID for the artifact
 
