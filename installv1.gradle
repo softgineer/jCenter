@@ -1,36 +1,23 @@
-apply plugin: 'com.android.application'
-
-repositories {
-    mavenCentral()
-    flatDir {
-        dirs 'libs' //this way we can find the .aar file in libs folder
-    }
-}
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.0"
+    buildToolsVersion "21.1.0"
 
     defaultConfig {
-
-        minSdkVersion 14
-        targetSdkVersion 20
-        versionCode 4
-        versionName "0.4.0"
-
-        applicationId "yourdomain.yourpackage"
+        minSdkVersion 9
+        targetSdkVersion 21
+        versionCode 1
+        versionName "0.1.0"
     }
-
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug {
-            minifyEnabled false
-        }
     }
 }
+
 /* apply plugin: 'maven-publish'
 
 afterEvaluate {
